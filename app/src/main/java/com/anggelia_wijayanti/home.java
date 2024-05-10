@@ -68,9 +68,9 @@ public class home extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode){
             case PERMISSION_REQUEST_CODE:
-            if (grantResults.length > 0 && grantResults[0]== PackageManager.PERMISSION_GRANTED){
-               checkPermissionAndOpenCamera();
-            }
+                if (grantResults.length > 0 && grantResults[0]== PackageManager.PERMISSION_GRANTED){
+                    checkPermissionAndOpenCamera();
+                }
                 break;
         }
 
